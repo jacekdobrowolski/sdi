@@ -29,12 +29,16 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section data-markdown>
-					## Mikro zawory MEMS
+					## Mikrozawory MEMS
 
 					### Jacek Dobrowolski
 
 					prezentacja dostępna na: [jacekdobrowolski.github.io/sdi](https://jacekdobrowolski.github.io/sdi)
+
+					Note:
+
 				</section>
+
 				<section style="text-align: left;">
 					<la>
 						<li>Precyzyjne systemy dozowania leków</li>
@@ -45,16 +49,45 @@
 						<li>Płyty kuchenne gazowe</li>
 					</la>
 					<aside class="notes">
-						
+						Mikrozawory mają szeroki zakres zastosowań.
+						Do przykładowych zastosowań należą systemy precyzyjnego dozowania leków np. insuliny.
+						Zaawansowane systemy hamulcowe.
+						Stosowane są również jako część systemów mikrosystemach płynowych.
+						Takich jak lab-on-chip pozwalające na przeprowadzenie reakcji chemicznych,
+						przy małych ilościach reagentów.
+						Systemy uTAS to LOC w którym przeprowadzany jest cały szereg badań w celu analizy.
+						Mikrozawory mają też zastoswania pod strzechą.
+						Takie jak chłodnictwo gdzie pozwalają osiągnąć lepszą sprawność energetyczną. 
+						Czy w kuchniach gazowych gdzie kontrolują przepływ gazu.
 					</aside>
 				</section>
+
 				<section>
-					<section data-auto-animate >
+					<p>Mikrozawory</p>
+					<la>
+						<li>Pasywne</li>
+						<li>Aktywne</li>
+					</la>
+					<aside class="notes">
+						Mikrozawory dzielimy na Pasywne i Aktywne.
+						Mikrozawory pasywne Medium przepływające przez zawór determinuje stan zaworu.
+						W mikrozaworach aktywnych stan zaworu zależy od sygnału sterującego.
+					</aside>
+				</section>
+
+				<section>
+					<section data-background="#ffffff" data-auto-animate>
 						<p>Pasywne</p>
+						<img src="images/Passive_microvalve.png" height="500">
 						<aside class="notes">
-	
+							Widzimy tu przykładowy mikrozawór pasywny mechaniczny.
+							W tym przypadku membrana zasłania otwór wlotowy.
+							Jeśli jednak zostanie przyłożone odpowiednie ciśnienie,
+							zawór otworzy się pozwalając na przepływ.
+							Jest to tak zwany zawór zwrotny pozwalający na przepływ w jedną stronę.
 						</aside>
 					</section>
+
 					<section data-auto-animate >
 						<p>Pasywne</p>
 						<ul>
@@ -62,37 +95,55 @@
 							<li>Nie mechaniczne</li>
 						</ul>
 						<aside class="notes">
-	
+							Zawory pasywne dzielimy na mechaniczne i nie mechaniczne.
+							Zawory mechaniczne posiadają ruchome części mechaniczne.
+							Na przykład membrany, klapy lub kulki.
 						</aside>
 					</section>
+
 					<section data-auto-animate >
 						<p>Pasywne</p>
 						<ul>
 							<li>Mechaniczne
 								<ul>
-									<li>Zawory zwrotne</li>
+									<li>Zawory zwrotne
+										<ul>
+											<li>Membranowe<li>
+											<li>Kulkowe</li>
+											<li>Klapowe</li>
+										</ul>
+									</li>
 								</ul>
 							</li>
 							<li>Nie mechaniczne
 								<ul>
 									<li>Kapilarne</li>
+									<li>Dyfuzorowe</li>
 								</ul>
 							</li>
 						</ul>
 						<aside class="notes">
-	
+							Dalszy podział wygląda nastepująco.
+							Zawory nie mechaniczne swoje działanie
+							opierają na właściwościach płynów takich jak lepkość czy liczba reynoldsa.
 						</aside>
-					</section>
-					<section data-background="#ffffff">
-						<img src="images/Passive_microvalve.png" height="500">
 					</section>
 				</section>
 				<section>
-					<section>
+					<section data-auto-animate>
 						<p>Aktywne</p>
+						<aside class="notes">
+							Przejdę teraz do krótkiego omówienia mikrozaworów aktywnych.
+						</aside>
 					</section>
-					<section data-background="#ffffff">
+					<section data-background="#ffffff" data-auto-animate>
+						<p>Aktywne</p>
 						<img src="images/Active_microvalve.png" height="500">
+						<aside class="notes">
+							Widzimy przykładowy mikrozawór mechaniczny termopneumatyczny membranowy.
+							Membrana przysłaniająca otwór jest poruszana poprzez ciśnienie wytworzone
+							przez zmianę temperatury we wnęce.
+						</aside>
 					</section>
 					<section data-auto-animate >
 						<p>Aktywne</p>
@@ -102,7 +153,8 @@
 							<li>Zewnętrzne</li>
 						</ul>
 						<aside class="notes">
-						
+							Mikrozawory aktywne dzielimy podobnie do pasywnych na mechaniczne i nie mechaniczne.
+							I również podobne są elementy mechaniczne.
 						</aside>
 					</section>
 					<section data-auto-animate >
@@ -133,25 +185,32 @@
 							</li>	
 						</ul>
 						<aside class="notes">
-						
+							Dalszy podział wyróżnia różne metody aktywacji zaworu.
+							Termiczne Elektromagnetyczne Piezoelektryczne Elektrochemiczne i wiele innych.
+							highlight-red:
+							W dalszej części przyjrzymy się bliżej mikrozaworom mechanicznym aktywnym.
 						</aside>
 					</section>
 					
 				</section>
 				<section>
 					<section data-markdown>
-						Termiczne
+						**Termiczne**
+
+						Note:
+						Pierwszy dział metod aktywacji to aktywacje termiczne.
 					</section>
 					<section data-markdown data-auto-animate>
-						Termopneumatyczne
+						**Termopneumatyczne**
 
 						Note:
 						Pierwsza aktywacja termiczna o jakiej chce powiedzieć to aktywacja Termopneumatyczna.
-						Mechanizmem poruszającym elementem przysłaniającym jest zmiana ciśnienia spowodowana
-						zmianą temperatury w szczelnej wnęce.
+						Mechanizmem poruszającym elementem przysłaniającym jest zmiana ciśnienia,
+						 spowodowana zmianą temperatury w szczelnej wnęce.
+						Tak jak widzieliśmy na wcześniejszej ilustracji.
 					</section>
 					<section data-markdown data-auto-animate>
-						Termopneumatyczne
+						**Termopneumatyczne**
 
 						| Wady                 | Zalety   |
 						|----------------------|----------|
@@ -160,16 +219,25 @@
 						
 
 						Note:
-						Do zalet należy
-						Do wad należą
+						Do wad takiego rozwiązania należą stosunkowo duże zużycie energii oraz bardzo powolne działanie.
+						Są jednak dość proste do wykonania.
 					</section>
 					<section data-markdown>
-						Bimetalowe
-					</section>
-					<section data-markdown>
-						Stopy z pamięcią kształtu (TSMA)
+						**Bimetalowe**
 						
-						Note: Stopy z termiczną pamięcią kształtu
+						Note:
+						
+					</section>
+					<section data-markdown>
+						**Stopy z pamięcią kształtu (TSMA)**
+						
+						Note:
+						Stopy z termiczną pamięcią kształtu Shape memory alloy.
+						Takie jak Nitinol czyli stop niklu z tytanem.
+						To materiały które po zdeformowaniu w niskiej temperaturze,
+						 na skutek przemiany mertenzytycznej powracają do orginalnej formy.
+						Pozwala to na przykład na stworzenie sprężyny która rozprostowywuje się przy pewnej temperaturze.
+						Jest to jedna z ciekawszych technologii.
 					</section>
 				</section>
 				<section>
@@ -203,7 +271,7 @@
 
 						| Wady                 | Zalety   		     |
 						|----------------------|---------------------|
-						| mały przepływ        | Duża siła 		     |
+						| Mały przepływ        | Duża siła 		     |
 						| 					   | Szybkie działanie   |
 
 						Note:
