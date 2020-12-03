@@ -16,7 +16,7 @@
 
 		<link rel="stylesheet" href="reveal.js/dist/reset.css">
 		<link rel="stylesheet" href="reveal.js/dist/reveal.css">
-		<link rel="stylesheet" href="reveal.js/dist/theme/moon.css" id="theme">
+		<link rel="stylesheet" href="reveal.js/dist/theme/night.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
@@ -29,7 +29,7 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section data-markdown>
-					# Mikrozawory MEMS
+					## Mikrozawory MEMS
 
 					### Jacek Dobrowolski
 
@@ -64,7 +64,7 @@
 						przy małych ilościach reagentów.
 						Systemy uTAS to podzbiór układów lab-on-chip w którym przeprowadzany jest cały szereg badań w celu analizy.
 						Mikrozawory mają też jednak zastosowania pod naszymi strzechami.
-						Takie jak chłodnictwo gdzie pozwalają osiągnąć lepszą sprawność energetyczną. 
+						Takie jak chłodnictwo gdzie pozwalają osiągnąć lepszą sprawność energetyczną.
 						Czy w kuchniach gazowych gdzie kontrolują przepływ gazu.
 					</aside>
 				</section>
@@ -83,6 +83,14 @@
 				</section>
 
 				<section>
+					<section data-auto-animate>
+						<p>Pasywne</p>
+
+						<aside class="notes">
+
+						</aside>
+					</section>
+
 					<section data-background="#ffffff" data-auto-animate>
 						<p>Pasywne</p>
 						<img src="images/Passive_microvalve.png" height="500">
@@ -124,7 +132,7 @@
 							<li>Nie mechaniczne
 								<ul>
 									<li>Kapilarne</li>
-									<li>Dyfuzorowe</li>
+									<li>Dyfuzyjne</li>
 								</ul>
 							</li>
 						</ul>
@@ -156,7 +164,6 @@
 						<ul class="fragment fade-in">
 							<li>Mechaniczne</li>
 							<li>Nie Mechaniczne</li>
-							<li>Zewnętrzne</li>
 						</ul>
 						<aside class="notes">
 							Mikrozawory aktywne dzielimy podobnie do pasywnych na mechaniczne i nie mechaniczne.
@@ -167,28 +174,21 @@
 						<p>Aktywne</p>
 						<ul>
 							<li>Mechaniczne
-								<ul class="fragment highlight-red">
+								<ul>
 									<li>Termiczne</li>
 									<li>Elektromagnetyczne</li>
 									<li>Piezoelektryczne</li>
 									<li>Elektrostatyczne</li>
 								</ul>
 							</li>
-								
-							<li>Nie Mechaniczne
+
+							<li class="fragment fade-out" >Nie Mechaniczne
 								<ul>
 									<li>Elektrochemiczne</li>
 									<li>Przemiana fazowa</li>
 									<li>Reologiczne (deformacje plastyczne)</li>
 								</ul>
 							</li>
-								
-							<li>Zewnętrzne
-								<ul>
-									<li>Modularne</li>
-									<li>Pneumatyczne</li>
-								</ul>
-							</li>	
 						</ul>
 						<aside class="notes">
 							Dalszy podział wyróżnia różne metody aktywacji zaworu.
@@ -197,7 +197,7 @@
 							W dalszej części przyjrzymy się bliżej mikrozaworom mechanicznym aktywnym.
 						</aside>
 					</section>
-					
+
 				</section>
 				<section>
 					<section data-markdown>
@@ -222,7 +222,7 @@
 						|----------------------|----------|
 						| Duże zużycie energii | Prostota |
 						| Powolne działanie    |          |
-						
+
 
 						Note:
 						//TODO
@@ -231,19 +231,20 @@
 					</section>
 					<section data-markdown>
 						**Bimetalowe**
-						
+
 						Note:
-						
+						Wykorzystują złącze z metali o różnych rozszerzalnościach cieplnych,
+						 co pozwala na poruszanie elementem mechanicznym.
 					</section>
 					<section data-markdown>
-						**Stopy z pamięcią kształtu (TSMA)**
-						
+						**Stopy z pamięcią kształtu (SMA)**
+
 						Note:
 						Stopy z termiczną pamięcią kształtu Shape memory alloy.
 						Takie jak Nitinol czyli stop niklu z tytanem.
 						To materiały które po zdeformowaniu w niskiej temperaturze,
-						 na skutek przemiany mertenzytycznej  przy pewnej wyższej temperaturze,
-						  powracają do oryginalnej formy.
+						 przy pewnej wyższej temperaturze,
+						 powracają do pierwotnego kształtu.
 						Pozwala to na przykład na stworzenie sprężyny która rozprostowuję się przy pewnej temperaturze.
 						Jest to jedna z ciekawszych technologii.
 					</section>
@@ -279,8 +280,11 @@
 						Note:
 							Mikrozawory wykorzystują odwrotny efekt piezoelektryczny.
 							Jest to zjawisko w którym niektóre kryształy (np. kwarcu)
-							 pod wpływem przyłożonego napięcia nieznacznie zmieniają 
+							 pod wpływem przyłożonego napięcia nieznacznie zmieniają
 							 odległość między jonami w swojej sieci krystalicznej zmieniając swoje wymiary.
+					</section>
+					<section data-background="#ffffff">
+						<img src="images/piezoelektryczny.gif">
 					</section>
 					<section data-markdown data-auto-animate>
 						**Piezoelektryczne**
@@ -342,6 +346,9 @@
 					Autor: Wouter at KTH
 					Licencja: [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
 
+					[*Kryształ piezoelektryczny*](https://commons.wikimedia.org/wiki/File:Piezoeffekt350px_clr.gif)
+					Autor: Degreen
+					Licencja: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
 					Note:
 					Ilustracje pochodzą z wikimedia i nie zostały zmodyfikowane.
 				</section>
